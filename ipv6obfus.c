@@ -148,6 +148,7 @@ int main(void) {
 		GenerateIpv6Output(rawData, sizeof(rawData));
 	}
 
+	// Freeing PaddedBuffer if needed
 	if (PaddedBuffer != NULL) {
 		HeapFree(GetProcessHeap(), 0, PaddedBuffer);
 	}
